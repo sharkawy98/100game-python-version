@@ -43,7 +43,7 @@ if gameMode==1:
             if playAgain=="y":
                 game=0
                 continue
-            elif playAgain=="n":
+            else:
                 break
 
         # Player2 turn
@@ -73,7 +73,7 @@ if gameMode==1:
             if playAgain == "y":
                 game = 0
                 continue
-            elif playAgain == "n":
+            else:
                 break
 
 #################################################################################################
@@ -110,7 +110,7 @@ if gameMode==2:
             if playAgain == "y":
                 game = 0
                 continue
-            elif playAgain == "n":
+            else:
                 break
 
         # Computer turn
@@ -133,7 +133,7 @@ if gameMode==2:
             if playAgain == "y":
                 game = 0
                 continue
-            elif playAgain == "n":
+            else:
                 break
 
 
