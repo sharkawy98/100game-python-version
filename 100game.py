@@ -17,10 +17,16 @@ if gameMode==1:
 
     while game<100:
         # Player1 turn
-        player1=int(input(p1+ " enter your number: "))
-        if player1<1 or player1>10:
-            while player1<1 or player1>10:
-                player1=int(input(p1+ " enter a number between 1 and 10 only: "))
+        while True:
+            try:
+                player1 = int(input(p1 + " enter your number: "))
+                if player1 < 1 or player1 > 10:
+                    while player1 < 1 or player1 > 10:
+                        player1 = int(input(p1 + " enter a number between 1 and 10 only: "))
+                break
+            except:
+                print('Invalid input enter a number between 1 and 10 only !')
+
         game+=player1
         while game>100:
             game-=player1
@@ -42,10 +48,15 @@ if gameMode==1:
 
         # Player2 turn
         if game<100:
-            player2=int(input(p2+ " enter your number: "))
-            if player2<1 or player2>10:
-                while player2<1 or player2>10:
-                    player2=int(input(p2+ " enter a number between 1 and 10 only: "))
+            while True:
+                try:
+                    player2 = int(input(p2 + " enter your number: "))
+                    if player2 < 1 or player2 > 10:
+                        while player2 < 1 or player2 > 10:
+                            player1 = int(input(p1 + " enter a number between 1 and 10 only: "))
+                    break
+                except:
+                    print('Invalid input enter a number between 1 and 10 only !')
         game+=player2
         while game>100:
             game -= player2
@@ -74,10 +85,15 @@ if gameMode==2:
 
     while game<100:
         # Player1 turn
-        player1=int(input(p1+ " enter your number: "))
-        if player1<1 or player1>10:
-            while player1<1 or player1>10:
-                player1=int(input(p1+ " enter a number between 1 and 10 only: "))
+        while True:
+            try:
+                player1 = int(input(p1 + " enter your number: "))
+                if player1 < 1 or player1 > 10:
+                    while player1 < 1 or player1 > 10:
+                        player1 = int(input(p1 + " enter a number between 1 and 10 only: "))
+                break
+            except:
+                print('Invalid input enter a number between 1 and 10 only !')
         game+=player1
         while game>100:
             game -= player1
